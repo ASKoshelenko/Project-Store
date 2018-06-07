@@ -122,7 +122,13 @@ a:hover {
     font-size: 0.875rem;
     color: #8bc34a;
 }
-.logout-btn {
+.user-controls button + button {
+    margin-left: 10px;
+}
+.login-btn{
+    margin-left: 26px;
+}
+.login-btn, .register-btn .logout-btn {
     /* Шрифт робото регулар */
     color: #fff;
     font-size: 0.75rem;
@@ -145,6 +151,9 @@ a:hover {
     padding-top: 57px;
     padding-bottom: 67px;
     background: url("../img/small-inner-bg.jpg") no-repeat center / cover;
+}
+.inner-title {
+    color: #fff;
 }
 .inner-subtitle {
     /* Роботомедиум */
