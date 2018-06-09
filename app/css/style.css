@@ -372,4 +372,15 @@
     padding: 20px;
     margin-bottom: 30px;
 }
+.all-items-pagination li{
+    display: inline-block;
+}
+.all-items-pagination li a {
+    padding: 11px 20px;
+    cursor: pointer;
+}
+.all-items-pagination .active {
+    background-color: #e74c3c;
+    color: #fff;
+}
 /* all-items end */

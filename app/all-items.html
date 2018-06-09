@@ -107,6 +107,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <aside class="aside">
+                            <!-- Categories start -->
                             <div class="aside-section bg-white border-grey">
                                 <h3 class="aside-title">Categories</h3>
                                 <!-- /.aside-title -->
@@ -139,6 +140,7 @@
                                 </ul>
                             </div>
                             <!-- /.aside-section -->
+                            <!-- Price range start -->
                             <div class="aside-section bg-white border-grey">
                                 <h3 class="aside-title">Price Range</h3>
                                 <!-- /.aside-title -->
@@ -158,6 +160,7 @@
                                 <button class="max-width-btn bg-green text-center"><i class="fas fa-search"></i>Search</button>
                             </div>
                             <!-- /.aside-section -->
+                            <!-- Top 10 sellers start -->
                             <div class="aside-section bg-white border-grey">
                                 <h3 class="aside-title">Top 10 Sellers</h3>
                                 <!-- /.aside-title -->
@@ -271,9 +274,21 @@
                     </div>
                     <!-- /.col-md-3 -->
                     <div class="col-md-9">
-                        <div class="view-controls bg-white border-grey"></div>
+                        <!-- View controls start -->
+                        <div class="view-controls d-flex bg-white border-grey">
+                            <div class="sort-by d-flex">
+                                <div class="sort-order"><i class="fas fa-sort-amount-down"></i></div>
+                                <div class="sort-method">Sort by: New Items<i class="fas fa-sort"></i></div>
+                            </div>
+                            <!-- /.sort-by -->
+                            <div class="view-type ml-auto">
+                                <i class="fas fa-th-large"></i>
+                                <i class="fas fa-th-list"></i>
+                            </div>
+                        </div>
                         <!-- /.view-controls -->
                         <div class="row">
+                            <!-- All items start -->
                             <div class="col-lg-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
@@ -609,6 +624,15 @@
                             <!-- /.col-lg-4 -->
                         </div>
                         <!-- /.row -->
+                        <!-- page pagination start -->
+                        <nav aria-label="Page-navigation">
+                            <ul class="all-items-pagination">
+                                <li class="page-item"><a href="#" class="page-link bg-white active">1</a></li>
+                                <li class="page-item"><a href="#" class="page-link bg-white">2</a></li>
+                                <li class="page-item"><a href="#" class="page-link bg-white">3</a></li>
+                                <li class="page-item"><a href="#" class="page-link bg-white">4</a></li>
+                            </ul>
+                        </nav>
                     </div>
                     <!-- /.col-md-9 -->
                 </div>
