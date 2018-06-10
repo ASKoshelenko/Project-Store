@@ -250,6 +250,7 @@
 }
 .user-info-wrap .fas{
     color: #707070;
+    font-size: 0.75rem;
     line-height: 1.5em;
     margin-left: 10px;
 }
@@ -378,7 +379,7 @@
     margin-bottom: 4px;
 }
 .categories .fas {
-    font-size: 0.875rem;
+    font-size: 0.625rem;
     color: #8bc34a;
     padding-right: 12px;
 }
