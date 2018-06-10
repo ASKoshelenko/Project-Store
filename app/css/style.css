@@ -59,14 +59,16 @@
 /* Custom styles */
 /* Default component */
 .breadcrumb {
-    padding: 45px 0;
+    padding: 35px 0;
 }
 .breadcrumb > li {
     display: inline-block;
 }
 .breadcrumb > li a {
+    font-family: 'robotoregular', sans-serif;
     color: #b0bec5;
     font-size: 0.9375rem;
+    line-height: 2.6667em;
 }
 .breadcrumb > li + li::before {
     content: '-';
@@ -76,16 +78,26 @@
 .breadcrump > .active {
     color: #263238;
 }
+.aside {
+    margin-bottom: 110px;
+}
 .aside-section {
-    padding: 20px 30px 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.aside-section h3 {
+    font-weight: normal;
 }
 .aside-section + .aside-section {
     margin-top: 30px;
 }
 .aside-title {
-    padding-bottom: 18px;
+    font-family: 'robotobold', sans-serif;
     border-bottom: 1px solid #dde3e8;
     margin-bottom: 25px;
+    font-size: 1.25rem;
+    line-height: 3em;
 }
 .card {
     -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
@@ -105,7 +117,7 @@
     width: 100%;
 }
 .card-description {
-    padding: 25px 20px;
+    padding: 22px 20px;
     border-bottom: 1px solid #e7ecf2;
 }
 .card-item-info .card-title{
@@ -114,23 +126,55 @@
 .card-item-info .card-category {
     display: block;
 }
+.card-title {
+    font-family: 'robotomedium', sans-serif;
+    color: #263238;
+    font-size: 1rem;
+}
+.card-category {
+    font-family: 'robotomedium', sans-serif;
+    font-size: 0.875rem;
+    color: #8bc34a;
+    margin-top: 3px;
+}
+.card-price {
+    font-family: 'robotobold', sans-serif;
+    font-size: 1.25rem;
+    color: #263238;
+}
 .card-author-info {
-    padding: 16px 20px;
+    padding: 15px 20px;
+    line-height: 30px;
 }
 .card-author img {
+    margin-right: 10px;
     height: 30px;
     width: 30px;
 }
+.card-author {
+    font-family: 'robotomedium', sans-serif;
+    font-size: 0.875rem;
+    color: #546e7a;
+}
 .product-rating li {
     display: inline-block;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #ffa726;
+}
+.product-reviews-count {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.75rem;
+    color: #263238;
 }
 .product-reviews-count::before {
     content: '(';
+    font-size: 0.875rem;
+    color: #546e7a;
 }
 .product-reviews-count::after {
     content: ')';
+    font-size: 0.875rem;
+    color: #546e7a;
 }
 /* Defoult component end */
 /* header start */
@@ -315,13 +359,43 @@
             transform: translateY(-50%);
 }
 /* inner end */
+/* all-items */
+.all-items-wrap .card {
+    margin-bottom: 30px;
+}
+/* =========== aside start ============= */
+/* categories start */
+.categories .aside-title{
+    margin-bottom: 29px;
+}
+.categories .default-chevron-list {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 2.6667em;
+    color: #263238;
+}
+.default-chevron-list li {
+    margin-bottom: 4px;
+}
+.categories .fas {
+    font-size: 0.875rem;
+    color: #8bc34a;
+    padding-right: 12px;
+}
+.category-item-count {
+    color: #c9d2d6;
+}
+/* categories end */
 /* price range */
+.price-range .aside-title {
+    margin-bottom: 40px;
+}
 .price-progress-bar {
 	background-color: #f2f5f8;
 	height: 6px;
     width: 100%;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
 }
 .price-progress-bar .progress {
 	position: absolute;
@@ -334,7 +408,14 @@
             border-radius: 4px;
 }
 .progress-value {
-    margin-top: -12px;
+    display: block;
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.9375rem;
+    color: #78909c;
+    margin-top: -10px;
+}
+.progress-value div {
+    line-height: 2.6667em;
 }
 .progress-value:last-child {
     cursor: pointer;
@@ -344,40 +425,101 @@
 }
 /* price range end */
 /* top 10 */
-.top-sellers .card-description {
-    padding: 25px 0;
+.all-items-wrap .aside-section .card {    
+    margin-bottom: 0;
+}
+.aside-section .card-description {
+    padding: 16px 0;
     border-bottom: none;
 }
-.top-sellers .card-author-info {
-    padding: 16px 0;
+.aside-section .card-category {
+    margin-top: 0;
 }
-.top-sellers .card, .card:hover {
+.aside-section .card-author-info {
+    padding: 0;
+}
+.aside-section .card {
     -webkit-box-shadow: none;
        -moz-box-shadow: none;
             box-shadow: none; 
 }
-.top-sellers .card{
-    border-bottom: 1px solid #dde3e8;
-    margin-top: 25px; 
+.aside-section .card:hover {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
 }
-.top-sellers .card:last-child{
+.aside-section .card + .card {
+    border-top: 1px solid #dde3e8;
+    padding-top: 25px;
+}
+.aside-section .card-img a img {
+    height: 120px;
+}
+.aside-section .card:last-child {
     border-bottom: none;
+    padding-bottom: 500px;
+}
+.aside-section .card-title {
+    font-family: 'robotobold', sans-serif;
+    font-size: 1rem;    
+}
+.aside-section .card-price {
+    font-size: 1rem;
+}
+.aside-section .card-author-info {
+    padding-bottom: 25px;
+}
+.aside-section .card + button {
+    margin-top: 20px;
 }
 /* top 10 end */
-/* all-items */
-.all-items-wrap .card {
-    margin-bottom: 30px;
-}
+/* =========== aside end ============= */
+/* view-controls start */
 .view-controls {
     padding: 20px;
     margin-bottom: 30px;
+}
+.sort-order {
+    color: #455a64;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.sort-method {
+    color: #707070;
+    font-size: 0.875rem;
+
+}
+.sort {
+    color: #707070;
+    padding-left: 12px;
+    cursor: pointer;
+}
+.view-type-wrapper {
+    font-size: 0.875rem;
+    color: #90a4ae;
+    cursor: pointer;
+}
+.view-type-wrapper .active {
+    color: #8bc34a;
+}
+.view-type-wrapper i + i {
+    margin-left: 12px;
+}
+/* view-controls end */
+.all-items-pagination {
+    margin-top: 60px;
 }
 .all-items-pagination li{
     display: inline-block;
 }
 .all-items-pagination li a {
+    font-family: 'robotomedium', sans-serif;
+    font-size: 1rem;
     padding: 11px 20px;
     cursor: pointer;
+    -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+       -moz-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+            box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
 }
 .all-items-pagination .active {
     background-color: #e74c3c;
