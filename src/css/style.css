@@ -257,6 +257,7 @@
 }
 .max-width-btn {
     color: #fff;
+    font-weight: bold;
     font-size: 0.9375rem;
     padding: 15px 0;
     width: 100%;
@@ -396,6 +397,9 @@
 }
 .progress-value .custom-price {
     margin-right: -25%;    
+}
+.aside-section button i {
+    padding-right: 11px;
 }
 /* price range end */
 /* top 10 */
