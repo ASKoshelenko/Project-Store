@@ -56,8 +56,18 @@
 .text-right {
     text-align: right;
 }
+.title {
+    font-family: 'robotobold', sans-serif;
+    font-size: 2.25rem;
+    color: #263238;
+    line-height: 1.6667em;
+    margin-bottom: 49px;
+}
 /* Custom styles */
 /* Default component */
+.store-section {
+    padding: 114px 30px;
+}
 .breadcrumb {
     padding: 35px 0;
 }
@@ -361,6 +371,51 @@
             transform: translateY(-50%);
 }
 /* inner end */
+/* Newest products */
+.newest-products-nav{
+    margin-bottom: 70px;
+}
+.newest-products-nav li {
+    display: inline-block;
+}
+.newest-products-nav li + li {
+    margin-left: 6px;
+}
+.newest-products-nav li a {
+    font-family: 'robotomedium', sans-serif;
+    font-size: 0.875rem;
+    color: #263238;
+    padding: 9px 20px;
+}
+.newest-products-nav .active {
+    background-color: #e74c3c;
+    color: #fff;
+}
+.newest-products .card {
+    margin-bottom: 30px;
+}
+.newest-products-view {
+    margin-top: 60px;
+}
+.newest-products-view li {
+    display: inline-block;
+}
+.newest-products-view li + li {
+    margin-left: 10px;
+}
+.newest-products-view li a {
+    padding: 15px 30px;
+    font-family: 'robotoregular', sans-serif;
+    font-size: 1rem;
+    color: #263238;
+    -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+       -moz-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+            box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+}
+/* Newest products end */
+/* Week trending */
+
+/* Week trending end */
 /* all-items */
 .all-items-wrap .card {
     margin-bottom: 30px;
