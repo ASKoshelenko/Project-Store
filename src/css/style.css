@@ -17,6 +17,9 @@
 .bg-white {
     background-color: #fff;
 }
+.bg-dark-grey {
+    background-color: #b5b5b5;
+}
 .border-grey {
     border: 1px solid #dedede;
 }
@@ -58,6 +61,9 @@
     color: #263238;
     line-height: 1.6667em;
     margin-bottom: 49px;
+}
+.title.title-white {
+    color: #fff;
 }
 /* Custom styles */
 /* Default component */
@@ -388,7 +394,7 @@
 }
 /* Newest products end */
 /* Week trending */
-.week-trending .row {
+.week-trending-wrapper {
     padding-bottom: 20px;
 }
 .slick-dots {
@@ -423,6 +429,26 @@
 	height: 9px;
 }
 /* Week trending end */
+/* why chose us */
+.why-chose-circle {
+    width: 110px;
+    height: 110px;    
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.why-chose-title{
+    color: #fff;
+}
+.why-chose-title-green {
+    color: #8bc34a;
+}
+.why-chose-text {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.9375rem;
+    color: #b0bec5;
+    margin-top: 30px;
+}
+/* why chose us end */
 /* all-items */
 .all-items-wrap .card {
     margin-bottom: 30px;
