@@ -238,7 +238,6 @@ label {
 button {
   border-radius: 0;
   cursor: pointer;
-  padding: 5px 18px;
 }
 
 button:focus {
