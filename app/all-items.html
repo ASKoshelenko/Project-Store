@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <!-- Bootstrap grid -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- ion range styles -->
+    <link rel="stylesheet" href="css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -29,9 +32,25 @@
             <!-- /.need-help -->
             <div class="user-controls d-flex align-items-center">
                 <div class="dropdown-item">
-                    <div class="dropdown-control d-flex">
+                    <div class="dropdown-control d-flex id="dropdownMenuLink" data-toggle="dropdown"">
                         <i class="far fa-bell mx-auto my-auto"></i>
                         <span class="notify-count bg-lightorange">8</span>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <h6></h6>
+                                <span class="notify-date"></span>
+
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-bell ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
                     </div>
                 </div>
                 <!-- /.dropdown-item -->
@@ -151,10 +170,10 @@
                             </div>
                             <!-- /.aside-section -->
                             <!-- Price range start -->
-                            <div class="aside-section price-range bg-white border-grey">
+                            <div class="aside-section bg-white border-grey">
                                 <h3 class="aside-title">Price Range</h3>
                                 <!-- /.aside-title -->
-                                <div class="price-progress-bar">                                                                                                           
+                                <!-- <div class="price-progress-bar">                                                                                                           
                                     <div class="progress d-flex align-items-start" style="width: 60%">
                                         <div class="progress-value text-center mr-auto">
                                             <img src="img/price-elips.png" alt="">
@@ -165,7 +184,11 @@
                                             <div class="custom-price">$600</div>    
                                         </div>
                                     </div>                                    
+                                </div> -->
+                                <div class="range-slider-wrap">
+                                    <input type="text" id="price-range" name="price-range" value="" />
                                 </div>
+                                <!-- /.range-slider-wrap -->
                                 <!-- /.price-progress-bar -->
                                 <button class="max-width-btn bg-green text-center"><i class="fas fa-search"></i>Search</button>
                             </div>
@@ -746,10 +769,10 @@
                         <!-- Page pagination start -->
                         <nav aria-label="Page-navigation">
                             <ul class="all-items-pagination">
-                                <li class="page-item"><a href="#" class="page-link bg-white active">1</a></li>
-                                <li class="page-item"><a href="#" class="page-link bg-white">2</a></li>
-                                <li class="page-item"><a href="#" class="page-link bg-white">3</a></li>
-                                <li class="page-item"><a href="#" class="page-link bg-white">4</a></li>
+                                <li class="page-item"><a href="#" class="page-link active">1</a></li>
+                                <li class="page-item"><a href="#" class="page-link ">2</a></li>
+                                <li class="page-item"><a href="#" class="page-link ">3</a></li>
+                                <li class="page-item"><a href="#" class="page-link ">4</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -761,11 +784,14 @@
     </main>
     <!-- /#main -->
     <!-- jQuery -->
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- ion range slider -->
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <!-- Init plugins -->
+    <script src="js/init.js"></script>
+    
 </body>
 </html>
