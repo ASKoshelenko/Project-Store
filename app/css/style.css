@@ -243,8 +243,30 @@
        -moz-box-shadow: 0 12px 20px rgba(0, 0, 0, .2);
             box-shadow: 0 12px 20px rgba(0, 0, 0, .2);
 }
+.dropdown-item .dropdown-menu {
+    margin-top: 33px;
+    right: 100px;
+}
+.user-dropdown-control .dropdown-menu {
+    margin-top: 26px;
+}
+.dropdown-menu.big-dropdown {
+    min-width: 267px;
+}
 .dropdown-menu.show {
     display: block;
+}
+.dropdown-notify-item {
+    padding: 18px 21px;
+}
+.dropdown-notify-item + .dropdown-notify-item {
+    border-top: 1px solid #d3d3d3;
+}
+.notify-item-info {
+    margin-left: 20px;
+}
+.notify-total-price {
+    padding-bottom: 18px;
 }
 .notify-count {
     position: absolute;
@@ -263,7 +285,8 @@
     text-indent: 0.091em;
 }
 .user-dropdown-control {
-    margin-left: 20px;
+    margin-left: 20px;    
+    margin-right: 27px;
 }
 .user-avatar {
     width: 34px;
@@ -274,7 +297,6 @@
 }
 .user-info-wrap {
     margin-left: 13px;
-    margin-right: 27px;
     cursor: pointer;   
 }
 .user-info-wrap h6 {
@@ -296,6 +318,9 @@
 }
 .user-controls button + button {
     margin-left: 10px;
+}
+.user-nav {
+    padding: 21px 18px;
 }
 .login-btn{
     margin-left: 26px;
