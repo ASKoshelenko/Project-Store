@@ -91,7 +91,7 @@
     padding: 0 5px;
     color: #8bc34a;
 }
-.breadcrump > .active {
+.breadcrump > .active, .breadcrumb > a.active {
     color: #263238;
 }
 .aside {
