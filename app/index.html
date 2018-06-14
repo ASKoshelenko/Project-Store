@@ -31,9 +31,48 @@
             <!-- /.need-help -->
             <div class="user-controls d-flex align-items-center">                
                 <div class="dropdown-item">
-                    <div class="dropdown-control d-flex">
+                    <div class="dropdown-control d-flex id="dropdownMenuLink" data-toggle="dropdown"">
                         <i class="fas fa-shopping-cart mx-auto my-auto"></i>
-                        <span class="notify-count bg-red">8</span>
+                        <span class="notify-count bg-green">8</span>
+                    </div>
+                    <div class="dropdown-menu big-dropdown dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-product.jpg" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <span class="notify-author">Grand Ballet</span>
+                                <h6>Need WP Help!</h6>
+                                <span class="notify-price">$59</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-product.jpg" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <span class="notify-aythor">Grand Ballet</span>
+                                <h6>Need WP Help!</h6>
+                                <span class="notify-price">$59</span>
+                            </div>
+                            <!-- /.notify-item-info -->                            
+                        </a>                        
+                        <!-- /.dropdown-notify-item -->
+                        <div href="#" class="dropdown-notify-item">
+                            <div class="notify-total-price d-flex">
+                                <span>Total</span>
+                                <span class="ml-auto">$118</span>
+                            </div> 
+                            <div class="notify-button d-flex align-items-stretch">
+                                <button class="max-width-btn">Go to Cart</button>
+                                <button class="max-width-btn">Go to Ceckout</button>
+                            </div>
+                        </div>
+                        <!-- /.dropdown-notify-item -->                     
                     </div>
                 </div>
                 <!-- /.dropdown-item -->
@@ -1045,6 +1084,7 @@
     <!-- /#main -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- jQuery UI lib -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- Slick slider -->
