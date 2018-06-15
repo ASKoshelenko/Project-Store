@@ -270,14 +270,15 @@
 .user-dropdown-control {
     margin-left: 20px;    
     margin-right: 27px;
+    position: relative;
 }
 .user-avatar {
     width: 34px;
     height: 34px;
     border-radius: 50%;
+    margin-right: 13px;
 }
 .user-info-wrap {
-    margin-left: 13px;
     cursor: pointer;   
 }
 .user-info-wrap h6 {
@@ -285,6 +286,7 @@
     font-size: 0.875rem;
     line-height: 1.7142em;
     font-weight: normal;
+    text-align: left;
 }
 .user-info-wrap .fas{
     color: #707070;
