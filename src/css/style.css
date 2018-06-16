@@ -2,6 +2,15 @@
 .bg-dark-blue {
     background-color: #263238;
 }
+.bg-blue {
+    background-color: #4f71ce;
+}
+.bg-light-blue {
+    background-color: #64b5f6;
+}
+.bg-lilac {
+    background-color: #6370b6;
+}
 .bg-lightorange {
     background-color: #fcb322;
 }
@@ -124,6 +133,9 @@
 .card-description {
     padding: 22px 20px;
     border-bottom: 1px solid #e7ecf2;
+}
+.card-small-description {
+    padding-left: 20px;
 }
 .card-item-info .card-title{
     display: block;
@@ -511,7 +523,7 @@
 .default-chevron-list li {
     margin-bottom: 4px;
 }
-.categories .fas {
+.default-chevron-list .fas {
     font-size: 0.625rem;
     color: #8bc34a;
     padding-right: 12px;
@@ -627,7 +639,51 @@
     color: #fff;
 }
 /* all-items end */
+/* Product details */
+.product-baner img {
+    padding: 15px 19px;
+    width: 100%;
+}
+.product-description {
+    padding: 40px 0;
+}
+.product-description h5 {
+    font-weight: normal;
+    color: #263238;
+    font-family: 'robotomedium', sans-serif;
+    font-size: 1.875rem;
+    line-height: 1.333em;
+    margin-bottom: 20px;
+}
+.product-description p {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: #707070;
+}
+.product-btn {
+    font-family: 'robotomedium', sans-serif;
+    padding: 13px 22px;
+    color: #fff;
+    font-size: 1rem;
+}
+.product-btn + .product-btn {
+    margin-left: 18px;
+}
+.product-social a {
+    padding: 13px 18px;
+    color: #fff;
+    font-size: 1.125rem;
+    line-height: 3.333em;
+}
+.product-social a i {
+    width: 18px;
+    text-align: center;
+}
 /* product tabs */
+.product-tabs {
+    margin: 53px 0;
+}
 .tab-pane {
     display: none;
 }
@@ -660,4 +716,43 @@
     height: 3px;
     background-color: #8bc34a;
 }
+.product-tabs .default-chevron-list {
+    padding: 35px 0 60px 35px;
+}
 /* product tabs end */
+/* More products */
+.more-products {
+    margin-bottom: 120px;
+}
+.more-products-title {
+    padding: 20px 0;
+    font-family: 'robotomedium', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.3333em;
+    color: #263238;
+    text-indent: 1.3889em;
+    margin-bottom: 28px;
+}
+.more-products .row + .row {
+    margin-top: 28px;
+}
+.more-products .card-title {
+    font-family: 'robotomedium', sans-serif;
+    font-size: 0.875rem;
+    color: #263238;
+    font-weight: normal;
+}
+.more-products .card-category {
+    font-size: 0.75rem;
+}
+.more-products .card-price {
+    font-family: 'robotobold', sans-serif;
+    font-size: 1.125rem;
+}
+/* More products end */
+/* product details end */
+/* Count of sales */
+.sales-count {
+    margin-top: 30px;;
+}
+/* Count of sales end */
