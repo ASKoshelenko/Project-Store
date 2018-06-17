@@ -236,6 +236,9 @@
 .dropdown-item {
     position: relative;
 }
+.dropdown-item.show .dropdown-control i {
+    color: #263238;
+}
 .dropdown-item + .dropdown-item {
     margin-left: 16px;
 }
@@ -263,21 +266,6 @@
 .dropdown-item .dropdown-menu {
     margin-top: 33px;
     right: 100px;
-}
-.user-dropdown-control .dropdown-menu {
-    margin-top: 26px;
-}
-.user-dropdown-control .default-chevron-list {
-    padding: 24px 14px
-}
-.user-dropdown-control .default-chevron-list li {
-    font-family: 'robotoregular', sans-serif;
-    font-size: 0.75rem;
-    color: #546e7a;
-}
-.user-dropdown-control .default-chevron-list li .fas {
-    color: #8bc34a;
-    font-size: 0.625rem;
 }
 .dropdown-menu.big-dropdown {
     min-width: 267px;
@@ -336,6 +324,9 @@
 }
 /* Email notify end */
 /* Shopping cart notify */
+.shopping-cart-notify .notify-item-info {
+    margin-top: 0;
+}
 .shopping-cart-notify .notify-item-info h6 {
     font-family: 'robotoregular', sans-serif;
     font-size: 0.75rem;
@@ -359,15 +350,37 @@
     color: #263238;
 }
 .notify-button {
-    padding: 8px 16px;
+    padding: 8px 14px;
     font-family: 'robotobold', sans-serif;
     font-size: 0.875rem;
     color: #fff;
+    font-weight: normal;
 }
 a.notify-button:hover {
     color: #fff; 
 }
 /* Shopping cart notify end */
+/* User dropdown */
+.user-dropdown-control .dropdown-menu {
+    margin-top: 26px;
+}
+.user-dropdown-control .default-chevron-list {
+    padding: 24px 14px
+}
+.user-dropdown-control .default-chevron-list li {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.75rem;
+    color: #546e7a;
+    line-height: 1em;
+}
+.user-dropdown-control .default-chevron-list li + li {
+    margin-top: 21px;
+}
+.user-dropdown-control .default-chevron-list li .fas {
+    color: #8bc34a;
+    font-size: 0.625rem;
+}
+/* User end */
 .notify-count {
     position: absolute;
     width: 18px;
@@ -724,7 +737,8 @@ a.notify-button:hover {
     font-family: 'robotoregular', sans-serif;
     font-size: 0.8125rem;
     color: #707070;
-    padding: 4px 9px;
+    padding: 3px 10px;
+    margin-top: 5px;
 }
 .product-author-img img {
     height: 100%;
