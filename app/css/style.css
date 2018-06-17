@@ -306,12 +306,50 @@
 .dropdown-notify-item {
     padding: 18px 21px;
 }
+.dropdown-notify-item i {
+    color: #b0bec5;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+.dropdown-notify-item:hover i {
+    color: #ef6c00;
+}
 .dropdown-notify-item + .dropdown-notify-item {
     border-top: 1px solid #d3d3d3;
 }
 .notify-item-info {
     margin-left: 20px;
+    margin-top: 6px;
 }
+.notify-date {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.625rem;
+    color: #707070;
+}
+/* Bell notify */
+.bell-notify .notify-item-info h6 {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.75rem;
+    color: #84b743;
+    font-weight: normal;
+}
+/* Bell notify end */
+/* Email notify */
+.email-notify .notify-item-info span {
+    display: block;
+}
+.email-notify .notify-author {
+    font-family: 'robotobold', sans-serif;
+    font-size: 0.75rem;
+    color: #263238;
+}
+.email-notify .notify-signature {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.6875rem;
+    color: #84b743;
+    font-weight: normal;
+}
+/* Email notify end */
 /* Shopping cart notify */
 .shopping-cart-notify .notify-item-info h6 {
     font-family: 'robotoregular', sans-serif;
@@ -682,6 +720,9 @@ a.notify-button:hover {
 .product-price-btn button {
     font-family: 'robotoregular', sans-serif;
     font-size: 1rem;
+    -webkit-box-shadow: 0 1px 2px rgba(69, 90, 100, .75);
+       -moz-box-shadow: 0 1px 2px rgba(69, 90, 100, .75);
+            box-shadow: 0 1px 2px rgba(69, 90, 100, .75);
 }
 .product-price-btn button:first-child, .product-price-btn button:last-child {
     font-family: 'robotobold';
