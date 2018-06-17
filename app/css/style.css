@@ -86,6 +86,19 @@
 .store-section {
     padding: 114px 30px;
 }
+.popular-item {
+    position: relative;
+}
+.trending-icon img {
+    position: absolute;
+}
+.trending-icon i {
+    position: absolute;
+    font-size: 1.125rem;
+    color: #fff;
+    top: 12px;
+    left: 13px;
+}
 .breadcrumb {
     padding: 35px 0;
 }
@@ -559,18 +572,29 @@ a.notify-button:hover {
 .newest-products-nav li {
     display: inline-block;
 }
-.newest-products-nav li + li {
+.newest-products-nav .nav-link.active {
+    background-color: #e74c3c;
+    color: #fff;
+}
+.newest-products-nav .nav-item {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+       -moz-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+.newest-products-nav .nav-item + .nav-item {
+    border-left: none;
     margin-left: 6px;
 }
-.newest-products-nav li a {
+.newest-products-nav .nav-link {
     font-family: 'robotomedium', sans-serif;
     font-size: 0.875rem;
     color: #263238;
     padding: 9px 20px;
 }
-.newest-products-nav .active {
-    background-color: #e74c3c;
-    color: #fff;
+.newest-products-nav .nav-link::after {
+    display: none;
 }
 .newest-products .card {
     margin-bottom: 30px;
@@ -654,6 +678,38 @@ a.notify-button:hover {
     margin-top: 30px;
 }
 /* why chose us end */
+/* Became author */
+.became-author-wrap {
+    margin: 0 18px;
+    padding: 70px 58px;
+    border-top: 115px solid #b5b5b5;
+    border-bottom: 115px solid #b5b5b5;
+    border-left: 225px solid #b5b5b5;
+    border-right: 225px solid #b5b5b5;
+}
+.became-author-text {
+    font-family: 'robotobold', sans-serif;
+    font-size: 1.875rem;
+    line-height: 1.2em;
+    color: #fff;
+    width: 50%;
+    font-weight: normal;
+}
+.became-author-btn {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 1.125rem;
+    color: #263238;
+    font-weight: normal;
+}
+/* Became author end */
+/* Free tutorial */
+.tutorial-title {
+    font-family: 'robotobold', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5em;
+    color: #263238;
+}
+/* Free tutorial end */
 /* all-items */
 .all-items-wrap .card {
     margin-bottom: 30px;
