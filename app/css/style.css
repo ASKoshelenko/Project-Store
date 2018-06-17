@@ -127,6 +127,23 @@
     font-size: 1.25rem;
     line-height: 3em;
 }
+.default-chevron-list {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 2.6667em;
+    color: #263238;
+}
+.default-chevron-list li {
+    margin-bottom: 4px;
+}
+.default-chevron-list .fas {
+    font-size: 0.625rem;
+    color: #8bc34a;
+    padding-right: 12px;
+}
+.category-item-count {
+    color: #c9d2d6;
+}
 .card {
     -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
        -moz-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
@@ -265,6 +282,18 @@
 .user-dropdown-control .dropdown-menu {
     margin-top: 26px;
 }
+.user-dropdown-control .default-chevron-list {
+    padding: 24px 14px
+}
+.user-dropdown-control .default-chevron-list li {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.75rem;
+    color: #546e7a;
+}
+.user-dropdown-control .default-chevron-list li .fas {
+    color: #8bc34a;
+    font-size: 0.625rem;
+}
 .dropdown-menu.big-dropdown {
     min-width: 267px;
 }
@@ -283,9 +312,39 @@
 .notify-item-info {
     margin-left: 20px;
 }
-.notify-total-price {
-    padding-bottom: 18px;
+/* Shopping cart notify */
+.shopping-cart-notify .notify-item-info h6 {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.75rem;
+    color: #84b743;
+    font-weight: normal;
 }
+.shopping-cart-notify .notify-author {
+    font-family: 'robotomedium', sans-serif;
+    font-size: 0.9375rem;
+    color: #263238;
+}
+.shopping-cart-notify .notify-price {
+    font-family: 'robotomedium', sans-serif;
+    font-size: 1rem;
+    color: #000;
+}
+.shopping-cart-notify .notify-total-price {
+    padding-bottom: 18px;
+    font-family: 'robotobold', sans-serif;
+    font-size: 1rem;
+    color: #263238;
+}
+.notify-button {
+    padding: 8px 16px;
+    font-family: 'robotobold', sans-serif;
+    font-size: 0.875rem;
+    color: #fff;
+}
+a.notify-button:hover {
+    color: #fff; 
+}
+/* Shopping cart notify end */
 .notify-count {
     position: absolute;
     width: 18px;
@@ -552,23 +611,6 @@
 /* categories start */
 .categories .aside-title{
     margin-bottom: 29px;
-}
-.categories .default-chevron-list {
-    font-family: 'robotoregular', sans-serif;
-    font-size: 0.9375rem;
-    line-height: 2.6667em;
-    color: #263238;
-}
-.default-chevron-list li {
-    margin-bottom: 4px;
-}
-.default-chevron-list .fas {
-    font-size: 0.625rem;
-    color: #8bc34a;
-    padding-right: 12px;
-}
-.category-item-count {
-    color: #c9d2d6;
 }
 /* categories end */
 /* price range */
