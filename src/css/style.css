@@ -644,7 +644,7 @@ a.notify-button:hover {
 /* Became author */
 .became-author-wrap {
     margin: 0 18px;
-    padding: 70px 58px;
+    padding: 70px 34px;
     border-top: 115px solid #b5b5b5;
     border-bottom: 115px solid #b5b5b5;
     border-left: 225px solid #b5b5b5;
@@ -655,7 +655,6 @@ a.notify-button:hover {
     font-size: 1.875rem;
     line-height: 1.2em;
     color: #fff;
-    width: 50%;
     font-weight: normal;
 }
 .became-author-btn {
