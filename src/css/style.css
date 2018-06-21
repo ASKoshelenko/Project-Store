@@ -1063,4 +1063,11 @@ a.product-btn:hover {
     font-size: 1.15rem;
     line-height: 1;
 }
+.footer-copyright-wrapper {
+    padding: 27px 0;
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.9375rem;
+    border-top: 1px solid #424d53;
+    color: #919699;
+}
 /* Footer end */
