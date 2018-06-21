@@ -21,5 +21,7 @@ $( function() {
     prefix: "$",
     hide_min_max: true
     });
-    
+
+    // init jQuerry form styler
+    $('.select-stayler, .input-file-stayler').styler();
 })(jQuery);

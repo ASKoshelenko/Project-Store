@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="bg-white">
         <div class="top-header container d-flex align-items-center">
             <div class="logo">
                 <a href="index.html">
@@ -32,24 +32,51 @@
             </div>
             <!-- /.logo -->
             <div class="need-help ml-auto">
-                <span>Need help? Talk to an expert: <a href="tel:+61383766284">+61 3 8376 6284</a></span>
+                <span><span>Need help?</span> Talk to an expert: <a href="tel:+61383766284">+61 3 8376 6284</a></span>
             </div>
             <!-- /.need-help -->
             <div class="user-controls d-flex align-items-center">
-                <div class="dropdown-item">
-                    <div class="dropdown-control d-flex" id="dropdownMenuLink" data-toggle="dropdown">
+                <!-- Bell notify -->
+                <div class="dropdown-item bell-notify">
+                    <div class="dropdown-control d-flex id="dropdownMenuLink" data-toggle="dropdown"">
                         <i class="far fa-bell mx-auto my-auto"></i>
-                        <span class="notify-count bg-orange">8</span>
+                        <span class="notify-count bg-light-orange">8</span>
                     </div>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-menu big-dropdown dropdown-menu-right" aria-labelledby="dropdownMenuLink">
                         <a href="#" class="dropdown-notify-item d-flex">
                             <div class="notify-item-avatar">
                                 <img src="img/notify-avatar.png" alt="">
                             </div>
                             <!-- /.notify-item-avatar -->
                             <div class="notify-item-info">
-                                <h6></h6>
-                                <span class="notify-date"></span>
+                                <h6>Need WP Help!</h6>
+                                <span class="notify-date">01 Dec, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-bell ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <h6>Need WP Help!</h6>
+                                <span class="notify-date">26 Nov, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-bell ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <h6>Need WP Help!</h6>
+                                <span class="notify-date">26 Nov, 2016</span>
                             </div>
                             <!-- /.notify-item-info -->
                             <i class="far fa-bell ml-auto"></i>
@@ -57,28 +84,130 @@
                         <!-- /.dropdown-notify-item -->
                     </div>
                 </div>
-                <!-- /.dropdown-item -->
-                <div class="dropdown-item">
-                    <div class="dropdown-control d-flex">
-                        <i class="far fa-bell mx-auto my-auto"></i>
-                        <span class="notify-count bg-orange">8</span>
+                <!-- /.dropdown-item bell-notify -->
+                <!-- Email notify -->
+                <div class="dropdown-item email-notify">
+                    <div class="dropdown-control d-flex id="dropdownMenuLink" data-toggle="dropdown"">
+                        <i class="far fa-envelope mx-auto my-auto"></i>
+                        <span class="notify-count bg-orange">5</span>
+                    </div>
+                    <div class="dropdown-menu big-dropdown dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <span class="notify-author">Kazi Fahim</span>
+                                <span class="notify-signature">Need WP Help!</span>
+                                <span class="notify-date">01 Dec, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-envelope ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <span class="notify-author">Richi Lenal</span>
+                                <span class="notify-signature">Need WP Help!</span>
+                                <span class="notify-date">26 Nov, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-envelope ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <span class="notify-author">PsdBosS</span>
+                                <span class="notify-signature">Psd Template Help!</span>
+                                <span class="notify-date">26 Nov, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="fas fa-reply ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
                     </div>
                 </div>
-                <!-- /.dropdown-item -->
-                <div class="dropdown-item">
-                    <div class="dropdown-control d-flex">
-                        <i class="far fa-bell mx-auto my-auto"></i>
-                        <span class="notify-count bg-orange">8</span>
+                <!-- /.dropdown-item email-notify -->
+                <!-- Shopping cart notify -->
+                <div class="dropdown-item shopping-cart-notify">
+                    <div class="dropdown-control d-flex id="dropdownMenuLink" data-toggle="dropdown"">
+                        <i class="fas fa-shopping-cart mx-auto my-auto"></i>
+                        <span class="notify-count bg-green">8</span>
+                    </div>
+                    <div class="dropdown-menu big-dropdown dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <a href="#" class="dropdown-notify-item d-flex align-items-center">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-product.jpg" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <span class="notify-author">Grand Ballet</span>
+                                <h6>WordPress</h6>
+                                <span class="notify-price">$59</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex align-items-center">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-product.jpg" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <span class="notify-author">Apple Device</span>
+                                <h6>WordPress</h6>
+                                <span class="notify-price">$59</span>
+                            </div>
+                            <!-- /.notify-item-info -->                            
+                        </a>                        
+                        <!-- /.dropdown-notify-item -->
+                        <div href="#" class="dropdown-notify-item">
+                            <div class="notify-total-price d-flex">
+                                <span>Total</span>
+                                <span class="ml-auto">$118</span>
+                            </div> 
+                            <div class="d-flex align-items-stretch">
+                                <a href="#" class="notify-button bg-green">Go to Cart</a>
+                                <a href="#" class="notify-button bg-red ml-auto">Go to Checkout</a>
+                            </div>
+                        </div>
+                        <!-- /.dropdown-notify-item -->                     
                     </div>
                 </div>
-                <!-- /.dropdown-item -->
+                <!-- /.dropdown-item shopping-cart-notify -->
+                <!-- User dropdown -->
                 <div class="user-dropdown-control d-flex align-items-center">
                     <img src="img/user-avatar.png" alt="" class="user-avatar">
                     <div class="user-info-wrap">
-                        <h6>Mike Hussy <i class="fas fa-chevron-down"></i></h6>
-                        <span class="balance">$171</span>
+                        <div class="user-info-wrap id="dropdownMenuLink" data-toggle="dropdown"">
+                            <h6>Mike Hussy <i class="fas fa-chevron-down"></i></h6>                            
+                            <span class="balance">$171.00</span>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                            <ul class="default-chevron-list align-items-center">
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Profile Page</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Portfolio</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Account Settings</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Downloads</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Wishlist</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Upload Item</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Statement</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Withdraws</a></li>
+                            </ul>
+                            <!-- /.default-chevron-list -->
+                        </div>
                     </div>
-                </div>
+                    <!-- /.user-info-wrap -->
+                </div>                
                 <!-- /.user-dropdown-control -->
                 <button class="logout-btn bg-red">Logout</button>
             </div>
@@ -88,19 +217,20 @@
         <div class="bottom-header bg-dark-blue">
             <div class="container">
                 <nav class="header-nav">
-                    <a href="#">link</a>
-                    <a href="#">link</a>
-                    <a href="#">link</a>
-                    <a href="#">link</a>
-                    <a href="#">link</a>
-                    <a href="#">link</a>
-                    <a href="#">link</a>
-                    <a href="#">link</a>
-                    <a href="#">link</a>
-                    <a href="#">link</a>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">WordPress</a>
+                    <a href="#">Joomla</a>
+                    <a href="#">PSD</a>
+                    <a href="#">Plugins</a>
+                    <a href="#">Components</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Help</a>
                 </nav>
                 <!-- /.header-nav -->
             </div>
+            <!-- /.container -->
         </div>
         <!-- /.bottom-header -->
     </header>
@@ -111,20 +241,20 @@
                 <h3 class="inner-subtitle text-center">Premium WordPress Themes, Web Templates and Many More ...</h3>
                 <form>
                     <div class="search-wrap">
-                        <input type="text" name="search" id="search" class="search-input" placeholder="Search Your Keywords . . .">
+                        <input type="text" name="search" id="search" class="search-input grey-shadow" placeholder="Search Your Keywords . . .">
                         <button class="search-input-btn"><i class="fas fa-search"></i></button>    
                     </div>
                 </form>
             </div>
         </div>
         <!-- /.inner -->
-        <div class="content-wrapper">
+        <div class="content-wrapper product-details-wrap">
             <div class="container">
                 <ul class="breadcrumb">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
-                    <li class="active">Product page</li>
+                    <li  class="active">Upload Product</li>
                 </ul>
                 <!-- /.breadcrumb -->
                 <div class="upload-product-content bg-white border-grey">
@@ -184,11 +314,16 @@
                 </div>
                 <!-- /.upload-product-content -->
             </div>
+            <!-- /.container -->
         </div>
         <!-- /.content-wrapper -->
     </main>
     <!-- /#main -->
-
+    <input type="file" name="" id="" class="input-file-stayler" multiple>
+    <select name="" id="" class="select-stayler">
+        <option value="">One</option>
+        <option value="">Two</option>
+    </select>
     <footer id="footer" class="bg-dark-blue">
         <div class="container">
             <div class="row">
@@ -208,11 +343,8 @@
     </footer>
     <!-- /#footer -->
     <!-- jQuery -->
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
     <!-- ion range slider -->
@@ -221,5 +353,6 @@
     <script src="js/jquery.formstyler.min.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
+    
 </body>
 </html>
