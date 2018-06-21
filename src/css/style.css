@@ -1043,6 +1043,9 @@ a.product-btn:hover {
 #footer {
     padding-top: 115px;
 }
+.footer-contact li {
+    display: inline-block;
+}
 .subscribe-form-wrapper {
     background: linear-gradient(to bottom, #000 0%, #263238 100%);
     padding: 1px;
