@@ -14,6 +14,11 @@
     <!-- ion range styles -->
     <link rel="stylesheet" href="css/ion.rangeSlider.css">
     <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
+    <!-- Sprite style -->
+    <link rel="stylesheet" href="css/sprite.css">
+    <!-- jQuery form stayler -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -469,15 +474,12 @@
                                 <div class="current-price-wrap d-flex align-items-center">
                                     <span class="current-price">$59.00</span>
                                     <div class="dropdown-item  ml-auto">
-                                        <div class="payment-type d-flex align-items-center bg-white border-grey id="dropdownMenuLink" data-toggle="dropdown"">
-                                            <span>Regular</span>
-                                            <i class="fas fa-sort-down"></i>
-                                        </div>
-                                        <div class="dropdown-menu small-dropdown dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                                            <ul class="payment-type">
-                                                <li>Standard</li>
-                                                <li>Gift</li>
-                                            </ul>
+                                        <div class="payment-type d-flex align-items-center bg-white border-grey">
+                                            <select name="" id="" class="select-stayler">
+                                                <option value="">Regular</option>
+                                                <option value="">Standard</option>
+                                                <option value="">Gift</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <!-- /.dropdown-item -->
@@ -505,7 +507,15 @@
                                        <button class="view-profile-btn bg-white border-grey mx-auto">View Profile</button>
                                     </div>
                                     <!-- /.author-name -->
-                               </div>
+                               </div>                           
+                                <ul class="author-batch text-center">
+                                    <li><i class="icon icon-face-batch-ic"></i></li>
+                                    <li><i class="icon icon-branch-batch-ic"></i></li>
+                                    <li><i class="icon icon-bolt-batch-ic"></i></li>
+                                    <li><i class="icon icon-f-batch-ic"></i></li>
+                                    <li><i class="icon icon-y-batch-ic"></i></li>
+                                </ul>
+                                <!-- /.author-batch -->
                             </div>
                             <!-- /.aside-section -->
                             <!-- Count of sales start -->
@@ -545,6 +555,29 @@
         <!-- /.content-wrapper -->
     </main>
     <!-- /#main -->
+    <input type="file" name="" id="" class="input-file-stayler" multiple>
+    <select name="" id="" class="select-stayler">
+        <option value="">One</option>
+        <option value="">Two</option>
+    </select>
+    <footer id="footer" class="bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+                <div class="col-3">
+                    <div class="subscribe-form-wrapper">
+                        <form class="d-flex">
+                            <input type="email" name="email" id="email" placeholder="E-mail Address">
+                            <button type="submit"><i class="fas fa-location-arrow"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /#footer -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -552,6 +585,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- ion range slider -->
     <script src="js/ion.rangeSlider.min.js"></script>
+    <!-- jQuery form stayler -->
+    <script src="js/jquery.formstyler.min.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
     

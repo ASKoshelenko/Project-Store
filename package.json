@@ -14,5 +14,9 @@
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^1.2.3",
     "gulp-tinypng": "^1.0.2"
+  },
+  "dependencies": {
+    "gulp.spritesmith": "^6.9.0",
+    "merge-stream": "^1.0.1"
   }
 }

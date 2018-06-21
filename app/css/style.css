@@ -237,6 +237,9 @@
     font-size: 0.875rem;
     color: #546e7a;
 }
+.icon {
+    display: inline-block;
+}
 /* Defoult component end */
 /* header start */
 .top-header {
@@ -837,6 +840,15 @@ a.notify-button:hover {
 .product-author-img img {
     height: 100%;
 }
+.author-batch {
+    margin-top: 22px;
+}
+.author-batch li {
+    display: inline-block;
+}
+.author-batch li + li {
+    margin-left: 4px;
+}
 /* Product-author end */
 /* Count of sales */
 .sales-count {
@@ -1051,3 +1063,29 @@ a.product-btn:hover {
 }
 /* More products end */
 /* product details end */
+/* Footer */
+#footer {
+    padding-top: 115px;
+}
+.subscribe-form-wrapper {
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238));
+    background: -webkit-linear-gradient(top, #000 0%, #263238 100%);
+    background: -moz-linear-gradient(top, #000 0%, #263238 100%);
+    background: -o-linear-gradient(top, #000 0%, #263238 100%);
+    background: linear-gradient(to bottom, #000 0%, #263238 100%);
+    padding: 1px;
+    display: inline-block;
+}
+.subscribe-form-wrapper #email {
+    height: 37px;
+    background-color: #2f3c43;
+    width: 216px;
+}
+.subscribe-form-wrapper button {
+    padding: 9px 13px;
+    background-color: #8bc34a;
+    color: #fff;
+    font-size: 1.15rem;
+    line-height: 1;
+}
+/* Footer end */
