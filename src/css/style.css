@@ -250,6 +250,9 @@
     border: 1px solid #dcdcdc;
     background-color: #f9f9f9;
 }
+textarea.form-control {
+    height: 150px;
+}
 /* Defoult component end */
 /* header start */
 .top-header {
