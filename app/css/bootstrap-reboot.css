@@ -38,6 +38,22 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'latobold';
+  src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+       url('../fonts/lato-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ralewaybold';
+  src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+       url('../fonts/raleway-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 /* fonts end */
  *,
 *::before,

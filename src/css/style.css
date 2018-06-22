@@ -232,6 +232,10 @@
 .head-title {
     padding: 18px 33px;
     border-bottom: 1px solid #d7d7d7;
+    font-family: 'robotomedium', sans-serif;
+    font-size: 1.5rem;
+    color: #263238;
+    font-weight: normal;
 }
 .form-body {
     padding-top: 40px;
@@ -242,6 +246,16 @@
 }
 .form-body label {
     padding-left: 45px;
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 40px;
+    color: #444444;
+}
+.form-body sup {
+    color: #8bc34a;
+    font-size: 1.5rem;
+    top: 0;
+    left: 3px;
 }
 .form-control {
     width: 100%;
@@ -249,6 +263,8 @@
     padding: 0 17px;
     border: 1px solid #dcdcdc;
     background-color: #f9f9f9;
+    font: 15px/40px 'robotoregular', sans-serif;
+	color: #444444;
 }
 textarea.form-control {
     height: 150px;
@@ -792,7 +808,8 @@ a.notify-button:hover {
 .current-price-wrap .jq-selectbox__select {
 	padding: 0 25px 0 10px;
 	font-family: 'robotoregular', sans-serif;
-	font-size: 0.8125rem;
+    font-size: 0.8125rem;
+    background-color: #fff;
 	line-height: 25px;
 	color: #70838d;
 	width: 92px;
@@ -1039,12 +1056,84 @@ a.product-btn:hover {
 }
 /* More products end */
 /* product details end */
+/* upload product */
+.upload-product-content {
+    margin-bottom: 107px;
+}
+
+.submit-btn {
+    font-family: 'robotomedium', sans-serif;
+    font-size: 0.9375rem;
+    padding: 16px 36px;
+    color: #fff;
+    line-height: 1;
+}
+/* Upload product end */
 /* Footer */
 #footer {
     padding-top: 115px;
 }
+#footer .default-chevron-list {
+    line-height: 2.4em;
+    color: #b7c3c8;
+}
+.footer-title {
+    font-family: 'ralewaybold', sans-serif;
+    font-size: 1.375rem;
+    line-height: 1.0909em;
+    color: #fff;
+    font-weight: normal;
+}
+.footer-title::after {
+    content: '';
+    display: block;
+    margin-top: 28px;
+    margin-bottom: 32px;
+    height: 3px;
+    width: 50px;
+    background-color: #8bc34a;
+}
+.footer-text {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.6em;
+    color: #b7c3c8;
+    margin-bottom: 26px;
+}
+.footer-info-item {
+    font-family: 'latobold', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.7142em;
+    color: #fff;
+}
+.footer-info-item .fas {
+    color: #8bc34a;
+    font-size: 1.125rem;
+    width: 24px;
+}
+.footer-info-item .fa-phone {
+    transform: rotate(90deg);
+    margin-left: -3px;
+}
+.footer-info-item span {
+    margin-left: 15px;
+}
+.footer-info-item li + li {
+    margin-top: 23px;
+}
+.footer-contact {
+    margin-bottom: 33px;
+}
 .footer-contact li {
     display: inline-block;
+}
+.footer-subtitle {
+    font-weight: normal;
+    color: #fff;
+    font-family: 'robotoregular', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8em;
+    margin-bottom: 14px;
 }
 .subscribe-form-wrapper {
     background: linear-gradient(to bottom, #000 0%, #263238 100%);
@@ -1055,7 +1144,13 @@ a.product-btn:hover {
     height: 37px;
     background-color: #2f3c43;
     width: 216px;
+    padding-left: 13px;
+    padding-right: 13px;
 }
+#email::-webkit-input-placeholder { font-family: 'robotoregular',sans-serif;  font-size: 0.875rem; color: #697378; }
+#email::-moz-placeholder          { font-family: 'robotoregular',sans-serif;  font-size: 0.875rem; color: #697378; } /* Firefox 19+ */
+#email:-moz-placeholder           { font-family: 'robotoregular',sans-serif;  font-size: 0.875rem; color: #697378; } /* Firefox 18- */
+#email:-ms-input-placeholder      { font-family: 'robotoregular',sans-serif;  font-size: 0.875rem; color: #697378; }
 .subscribe-form-wrapper button {
     padding: 9px 13px;
     background-color: #8bc34a;
@@ -1064,6 +1159,7 @@ a.product-btn:hover {
     line-height: 1;
 }
 .footer-copyright-wrapper {
+    margin-top: 97px;
     padding: 27px 0;
     font-family: 'robotoregular', sans-serif;
     font-size: 0.9375rem;
