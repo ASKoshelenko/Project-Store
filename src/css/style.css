@@ -1074,8 +1074,11 @@ a.product-btn:hover {
     padding-top: 115px;
 }
 #footer .default-chevron-list {
-    line-height: 2.4em;
+    line-height: 1em;
     color: #b7c3c8;
+}
+#footer .default-chevron-list li + li {
+    margin-top: 25px;
 }
 .footer-title {
     font-family: 'ralewaybold', sans-serif;
