@@ -24,7 +24,7 @@
 </head>
 <body>
     <header id="header" class="bg-white">
-        <div class="top-header flex-wrap container d-flex align-items-center">
+        <div class="top-header container d-flex align-items-center">
             <div class="logo">
                 <a href="index.html">
                     <img src="img/logo.png" alt="">
@@ -35,7 +35,7 @@
                 <span><span>Need help?</span> Talk to an expert: <a href="tel:+61383766284">+61 3 8376 6284</a></span>
             </div>
             <!-- /.need-help -->
-            <div class="user-controls d-flex align-items-center justify-content-around justify-content-lg-start">
+            <div class="user-controls d-flex align-items-center">
                 <!-- Bell notify -->
                 <div class="dropdown-item bell-notify">
                     <div class="dropdown-control d-flex id="dropdownMenuLink" data-toggle="dropdown"">
@@ -203,8 +203,10 @@
                                 <li><a href="#"><i class="fas fa-chevron-right"></i>Statement</a></li>
                                 <li><a href="#"><i class="fas fa-chevron-right"></i>Withdraws</a></li>
                             </ul>
+                            <!-- /.default-chevron-list -->
                         </div>
                     </div>
+                    <!-- /.user-info-wrap -->
                 </div>                
                 <!-- /.user-dropdown-control -->
                 <button class="logout-btn bg-red">Logout</button>
@@ -258,7 +260,7 @@
                     <li  class="active">GT Builder Construction</li>
                 </ul>
                 <!-- /.breadcrumb -->
-
+                
                 <div class="overlay"></div>
                 <!-- /.overlay -->
 
@@ -471,9 +473,9 @@
                         <!-- /.product-info-wrap -->
                     </div>
                     <!-- /.col-lg-9 -->
-                    <div class="col-12 col-lg-3 mobile-aside right">
+                    <div class="col-12 col-lg-3 moblile-aside right">
                         <button class="close-mobile-aside"><i class="fas fa-times"></i></button>
-                        <aside id="aside">
+                        <aside class="aside">
                             <!-- Product price start -->
                             <div class="aside-section product-price bg-white border-grey">
                                 <h3 class="aside-title">Product Price</h3>
@@ -548,11 +550,13 @@
                             </div>
                             <!-- /.aside-section -->
                         </aside>
-                        <!-- /#aside -->
+                        <!-- /.aside -->
                     </div>
-                    <!-- ./col-md-3 -->
+                    <!-- /.col-lg-3 -->
                 </div>
+                <!-- /.row -->
             </div>
+            <!-- /.container -->
         </div>
         <!-- /.content-wrapper -->
     </main>
@@ -635,14 +639,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
     <!-- ion range slider -->
-    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/lib/ion.rangeSlider.min.js"></script>
     <!-- jQuery form stayler -->
-    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/lib/jquery.formstyler.min.js"></script>
     <!-- Aside js -->
-    <script src="js/aside.js"></script>
+    <script src="js/main/aside.js"></script>
     <!-- Init plugins -->
-    <script src="js/init.js"></script>
+    <script src="js/main/init.js"></script>
+    
 </body>
 </html>

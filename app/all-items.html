@@ -24,7 +24,7 @@
 </head>
 <body>
     <header id="header" class="bg-white">
-        <div class="top-header container d-flex align-items-center">
+        <div class="top-header flex-wrap container d-flex align-items-center">
             <div class="logo">
                 <a href="index.html">
                     <img src="img/logo.png" alt="">
@@ -35,7 +35,7 @@
                 <span><span>Need help?</span> Talk to an expert: <a href="tel:+61383766284">+61 3 8376 6284</a></span>
             </div>
             <!-- /.need-help -->
-            <div class="user-controls d-flex align-items-center">
+            <div class="user-controls flex-wrap d-flex align-items-center justify-content-around justify-content-lg-start">
                 <!-- Bell notify -->
                 <div class="dropdown-item bell-notify">
                     <div class="dropdown-control d-flex id="dropdownMenuLink" data-toggle="dropdown"">
@@ -150,9 +150,9 @@
                             </div>
                             <!-- /.notify-item-avatar -->
                             <div class="notify-item-info">
-                                <span class="notify-author">Grand Ballet</span>
-                                <h6>WordPress</h6>
-                                <span class="notify-price">$59</span>
+                                <div class="notify-author">Grand Ballet</div>
+                                <div class="notify-category">WordPress</div>
+                                <div class="notify-price">$59</div>
                             </div>
                             <!-- /.notify-item-info -->
                         </a>
@@ -163,9 +163,9 @@
                             </div>
                             <!-- /.notify-item-avatar -->
                             <div class="notify-item-info">
-                                <span class="notify-author">Apple Device</span>
-                                <h6>WordPress</h6>
-                                <span class="notify-price">$59</span>
+                                <div class="notify-author">Apple Device</div>
+                                <div class="notify-category">WordPress</div>
+                                <div class="notify-price">$59</div>
                             </div>
                             <!-- /.notify-item-info -->                            
                         </a>                        
@@ -256,8 +256,13 @@
                     <li  class="active">Product Page</li>
                 </ul>
                 <!-- /.breadcrumb -->
+
+                <div class="overlay"></div>
+                <!-- /.overlay -->
+
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-12 col-lg-3 mobile-aside left">
+                        <button class="close-mobile-aside"><i class="fas fa-times"></i></button>
                         <aside class="aside">
                             <!-- Categories start -->
                             <div class="aside-section categories bg-white border-grey">
@@ -423,9 +428,13 @@
                         <!-- /.aside -->
                     </div>
                     <!-- /.col-md-3 -->
-                    <div class="col-md-9">
+                    <div class="col-12 col-lg-9">
                         <!-- View controls start -->
-                        <div class="view-controls d-flex bg-white border-grey">
+                        <div class="view-controls d-flex bg-white border-grey">                            
+                            <div class="mobile-aside-toggle">
+                                <i class="fab fa-elementor"></i>
+                            </div>
+                            <!-- /.mobile-aside-toggle -->
                             <div class="sort-by d-flex align-items-start">
                                 <div class="sort-order"><i class="fas fa-sort-amount-down"></i></div>
                                 <div class="sort-method">Sort by: New Items</div>
@@ -440,7 +449,7 @@
                         <!-- /.view-controls -->
                         <div class="row">
                             <!-- All items start -->
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#"><img src="img/card-item-img-1.jpg" alt=""></a>
@@ -477,7 +486,7 @@
                                 <!-- /.card -->
                             </div>
                             <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#"><img src="img/card-item-img-1.jpg" alt=""></a>
@@ -514,7 +523,7 @@
                                 <!-- /.card -->
                             </div>
                             <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#"><img src="img/card-item-img-1.jpg" alt=""></a>
@@ -551,7 +560,7 @@
                                 <!-- /.card -->
                             </div>
                             <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#"><img src="img/card-item-img-1.jpg" alt=""></a>
@@ -588,7 +597,7 @@
                                 <!-- /.card -->
                             </div>
                             <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#"><img src="img/card-item-img-1.jpg" alt=""></a>
@@ -625,7 +634,7 @@
                                 <!-- /.card -->
                             </div>
                             <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#"><img src="img/card-item-img-1.jpg" alt=""></a>
@@ -662,7 +671,7 @@
                                 <!-- /.card -->
                             </div>
                             <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#"><img src="img/card-item-img-1.jpg" alt=""></a>
@@ -699,7 +708,7 @@
                                 <!-- /.card -->
                             </div>
                             <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#"><img src="img/card-item-img-1.jpg" alt=""></a>
@@ -736,7 +745,7 @@
                                 <!-- /.card -->
                             </div>
                             <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#"><img src="img/card-item-img-1.jpg" alt=""></a>
@@ -773,7 +782,7 @@
                                 <!-- /.card -->
                             </div>
                             <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#"><img src="img/card-item-img-1.jpg" alt=""></a>
@@ -810,7 +819,7 @@
                                 <!-- /.card -->
                             </div>
                             <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#"><img src="img/card-item-img-1.jpg" alt=""></a>
@@ -847,7 +856,7 @@
                                 <!-- /.card -->
                             </div>
                             <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
                                     <div class="card-img">
                                         <a href="#"><img src="img/card-item-img-1.jpg" alt=""></a>
@@ -910,7 +919,7 @@
     <footer id="footer" class="bg-dark-blue">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-lg-6 col-xl-3">
                     <h3 class="footer-title">About Company</h3>
                     <!-- /.footer-title -->
                     <p class="footer-text">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus. </p>
@@ -923,7 +932,7 @@
                     <!-- /.footer-info-item -->
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
+                <div class="col-12 col-lg-6 col-xl-3">
                     <h3 class="footer-title">Join Our Community</h3>
                     <!-- /.footer-title -->
                     <ul class="default-chevron-list">
@@ -936,7 +945,7 @@
                     <!-- /.default-chevron-list -->
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
+                <div class="col-12 col-lg-6 col-xl-3">
                     <h3 class="footer-title">Need Help?</h3>
                     <!-- /.footer-title -->
                     <ul class="default-chevron-list">
@@ -949,7 +958,7 @@
                     <!-- /.default-chevron-list -->
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
+                <div class="col-12 col-lg-6 col-xl-3">
                     <h3 class="footer-title">Follow Us On</h3>
                     <!-- /.footer-title -->
                     <ul class="footer-contact">
@@ -985,11 +994,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
     <!-- ion range slider -->
-    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/lib/ion.rangeSlider.min.js"></script>
+    <!-- Aside js -->
+    <script src="js/main/aside.js"></script>
     <!-- Init plugins -->
-    <script src="js/init.js"></script>
+    <script src="js/main/init.js"></script>
     
 </body>
 </html>

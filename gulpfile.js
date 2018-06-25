@@ -6,6 +6,9 @@ const minifycss = require('gulp-cssmin'); // минифицирует css
 const tinypg = require('gulp-tinypng');
 const spritesmith = require('gulp.spritesmith');
 const merge = require('merge-stream');
+const concat = require("gulp-concat");
+const babel = require("gulp-babel");
+const minifyjs = require("gulp-js-minify");
 
 gulp.task('css', function(){
     return gulp.src("src/css/**/*.css")
@@ -16,7 +19,18 @@ gulp.task('css', function(){
 });
 
 gulp.task('cssmin', function(){
-    return gulp.src("app/css/style.css") // берем файл из папки app/css
+    return gulp.src([
+        "app/css/bootstrap-grid.min.css",
+        "app/css/bootstrap-reboot.css",
+        "app/css/ion.rangeSlider.css",
+        "app/css/ion.rangeSlider.skinNice.css",
+        "app/css/jquery.formstyler.css",
+        "app/css/jquery.formstyler.theme.css",
+        "app/css/sprite.css",
+        "app/css/style.css",
+        "!app/css/style.min.css"
+    ]) // берем файл из папки app/css
+        .pipe(concat("styles.css")) // concat css files
         .pipe(minifycss()) // минифицируем
         .pipe(rename('style.min.css')) // переименовываем
         .pipe(gulp.dest("app/css/")); // выгружаем
@@ -47,6 +61,17 @@ gulp.task('sprite', function () {
         .pipe(gulp.dest('app/css/'));
     return merge(imgStream, cssStream);
 });
+
+gulp.task("js", function() {
+    return gulp.src("app/js/main/**/*.js")
+        .pipe(babel({
+            presets: ["env"]
+        }))
+        .pipe(concat("scripts.js"))
+        .pipe(minifyjs())
+        .pipe(rename("scripts.min.js"))
+        .pipe(gulp.dest("app/js"));
+})
 
 gulp.task("watch", ["css", "cssmin", 'sprite'], function(){
     gulp.watch("src/css/**/*.css", ["css"]); // ватчим за файлами в src/css
