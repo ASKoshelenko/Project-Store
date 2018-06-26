@@ -800,6 +800,10 @@ a.notify-button:hover {
 .week-trending-wrapper {
     padding-bottom: 20px;
 }
+.week-trending-wrapper .card {
+    margin-left: 15px;
+    margin-right: 15px;
+}
 .week-trending-wrapper .card-title {
     font-size: 1.125rem;
 }

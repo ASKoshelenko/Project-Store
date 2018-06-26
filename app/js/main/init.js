@@ -1,34 +1,61 @@
-$( function() {
-    //init week trending carousel
-    $('.week-trending-carousel').slick({
-    arrows: false,
-    dots: true,
-    autoplay: true,
-    autoplaySpeed: 5000      
-    });
-    
-} );
-
 ( function($) { 
     // init slicknav
-    
-    $('.header-nav').slicknav({
-        appendTo: '.bottom-header .container',
-        label: "Menu"
-    });
-    
-    //init ion range slider
-    $("#price-range").ionRangeSlider({
-        type: "double",
-        grid: false,
-        min: 0,
-        max: 1000,
-        from: 200,
-        to: 800,
-        prefix: "$",
-        hide_min_max: true
-    });
+    if($('.header-nav').length) {
+        $('.header-nav').slicknav({
+            appendTo: '.bottom-header .container',
+            label: "Menu"
+        });
+    }    
 
-    // init jQuerry form styler
-    $('.select-stayler, .input-file-stayler').styler();
+    //init week trending carousel
+    if ($('.week-trending-carousel').length) {
+      $('.week-trending-carousel').slick({
+            arrows: false,
+            dots: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+              }
+            },
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+      });
+    }
+
+    // Init ion range slider
+    if ( $("#price-range").length) {
+        $("#price-range").ionRangeSlider({
+            type: "double",
+            grid: false,
+            min: 0,
+            max: 1000,
+            from: 200,
+            to: 800,
+            prefix: "$",
+            hide_min_max: true
+        });
+    }
+
+    // Init jquery form stayler
+    if ($('.select-stayler, .input-file-stayler').length) {
+        $('.select-stayler, .input-file-stayler').styler();
+    }
 })(jQuery);

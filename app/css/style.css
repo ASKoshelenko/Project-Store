@@ -870,6 +870,9 @@ a.notify-button:hover {
 .week-trending-wrapper {
     padding-bottom: 20px;
 }
+.week-trending-wrapper .card {
+    page-break-after: 15px 15px;
+}
 .week-trending-wrapper .card-title {
     font-size: 1.125rem;
 }
