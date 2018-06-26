@@ -1397,6 +1397,11 @@ a.product-btn:hover {
     color: #fff;
     line-height: 1;
 }
+@media (max-width: 768px) {
+    .upload-product-content label {
+        padding-left: 0;
+    }
+}
 /* Upload product end */
 /* Footer */
 #footer {
