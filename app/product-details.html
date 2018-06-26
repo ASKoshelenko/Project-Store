@@ -14,6 +14,8 @@
     <!-- ion range styles -->
     <link rel="stylesheet" href="css/ion.rangeSlider.css">
     <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
+    <!-- Slick nav -->
+    <link rel="stylesheet" href="css/slicknav.css">
     <!-- Sprite style -->
     <link rel="stylesheet" href="css/sprite.css">
     <!-- jQuery form stayler -->
@@ -279,10 +281,12 @@
                                 <p>Bmply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived noning essentially unchanged. </p>
                             </div>
                             <!-- /.product-description -->
-                            <div class="d-flex align-items-center">                         
-                                <a href="#" class="product-btn bg-red">Live Preview</a>
-                                <a href="#" class="product-btn bg-dark-blue">Screenshots</a>
-                                <a href="#" class="product-btn bg-green">Documentation</a>
+                            <div class="d-xl-flex align-items-center"> 
+                                <div class="d-flex flex-wrap">
+                                    <a href="#" class="product-btn bg-red">Live Preview</a>
+                                    <a href="#" class="product-btn bg-dark-blue">Screenshots</a>
+                                    <a href="#" class="product-btn bg-green">Documentation</a>
+                                </div>
                                 <ul class="product-social ml-auto">
                                     <li><a href="#" class="bg-lilac"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="#" class="bg-light-blue"><i class="fab fa-twitter"></i></a></li>
@@ -293,7 +297,7 @@
                             </div>
                             <!-- Product tabs start -->
                             <div class="product-tabs bg-white border-grey">
-                                <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
+                                <ul class="nav nav-tabs d-flex flex-wrap" id="myTab" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" id="item-features-tab" data-toggle="tab" href="#item-features" role="tab" aria-controls="item-features" aria-selected="true">Item Features</a>
                                     </li>
@@ -309,7 +313,7 @@
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="item-features" role="tabpanel" aria-labelledby="item-features-tab">
-                                        <div class="d-flex">
+                                        <div class="d-lg-flex">
                                             <ul class="default-chevron-list align-items-center">
                                                 <li class="d-flex align-items-center">
                                                     <a href="#" class="d-flex align-items-center">
@@ -376,7 +380,7 @@
                             <div class="more-products">
                                 <div class="more-products-title bg-white border-grey"><a href="#">More Product by PsdBosS</a></div>
                                 <div class="row">
-                                    <a href="#" class="col-md-4">
+                                    <a href="#" class="col-12 col-lg-6 col-xl-4">
                                         <div class="card  bg-white d-flex align-items-center">
                                             <div class="card-img">
                                                 <img src="img/more-product-img.jpg" alt="">
@@ -390,7 +394,7 @@
                                         </div>
                                     </a>
                                     <!-- /.col-md-4 -->
-                                    <a href="#" class="col-md-4">
+                                    <a href="#" class="col-12 col-lg-6 col-xl-4">
                                         <div class="card  bg-white d-flex align-items-center">
                                             <div class="card-img">
                                                 <img src="img/more-product-img.jpg" alt="">
@@ -398,13 +402,13 @@
                                             <div class="card-small-description">
                                                 <div class="card-title">Grand Ballet - Dance</div>
                                                 <div class="card-category">PSD Template</div>
-                                                <div class="card-price">$12</div>
+                                                <div class="card-price">$59</div>
                                             </div>
                                             <!-- /.card-small-description -->
                                         </div>
                                     </a>
                                     <!-- /.col-md-4 -->
-                                    <a href="#" class="col-md-4">
+                                    <a href="#" class="col-12 col-lg-6 col-xl-4">
                                         <div class="card  bg-white d-flex align-items-center">
                                             <div class="card-img">
                                                 <img src="img/more-product-img.jpg" alt="">
@@ -412,16 +416,27 @@
                                             <div class="card-small-description">
                                                 <div class="card-title">Grand Ballet - Dance</div>
                                                 <div class="card-category">PSD Template</div>
-                                                <div class="card-price">$12</div>
+                                                <div class="card-price">$48</div>
+                                            </div>
+                                            <!-- /.card-small-description -->
+                                        </div>
+                                    </a>
+                                    <!-- /.col-md-4 -->                                
+                                    <a href="#" class="col-12 col-lg-6 col-xl-4">
+                                        <div class="card  bg-white d-flex align-items-center">
+                                            <div class="card-img">
+                                                <img src="img/more-product-img.jpg" alt="">
+                                            </div>
+                                            <div class="card-small-description">
+                                                <div class="card-title">Grand Ballet - Dance</div>
+                                                <div class="card-category">Component</div>
+                                                <div class="card-price">$18</div>
                                             </div>
                                             <!-- /.card-small-description -->
                                         </div>
                                     </a>
                                     <!-- /.col-md-4 -->
-                                </div>
-                                <!-- /.row -->
-                                <div class="row">
-                                    <a href="#" class="col-md-4">
+                                    <a href="#" class="col-12 col-lg-6 col-xl-4">
                                         <div class="card  bg-white d-flex align-items-center">
                                             <div class="card-img">
                                                 <img src="img/more-product-img.jpg" alt="">
@@ -429,35 +444,21 @@
                                             <div class="card-small-description">
                                                 <div class="card-title">Grand Ballet - Dance</div>
                                                 <div class="card-category">PSD Template</div>
-                                                <div class="card-price">$12</div>
+                                                <div class="card-price">$29</div>
                                             </div>
                                             <!-- /.card-small-description -->
                                         </div>
                                     </a>
                                     <!-- /.col-md-4 -->
-                                    <a href="#" class="col-md-4">
+                                    <a href="#" class="col-12 col-lg-6 col-xl-4">
                                         <div class="card  bg-white d-flex align-items-center">
                                             <div class="card-img">
                                                 <img src="img/more-product-img.jpg" alt="">
                                             </div>
                                             <div class="card-small-description">
                                                 <div class="card-title">Grand Ballet - Dance</div>
-                                                <div class="card-category">PSD Template</div>
-                                                <div class="card-price">$12</div>
-                                            </div>
-                                            <!-- /.card-small-description -->
-                                        </div>
-                                    </a>
-                                    <!-- /.col-md-4 -->
-                                    <a href="#" class="col-md-4">
-                                        <div class="card  bg-white d-flex align-items-center">
-                                            <div class="card-img">
-                                                <img src="img/more-product-img.jpg" alt="">
-                                            </div>
-                                            <div class="card-small-description">
-                                                <div class="card-title">Grand Ballet - Dance</div>
-                                                <div class="card-category">PSD Template</div>
-                                                <div class="card-price">$12</div>
+                                                <div class="card-category">Hoomla</div>
+                                                <div class="card-price">$18</div>
                                             </div>
                                             <!-- /.card-small-description -->
                                         </div>
@@ -478,7 +479,7 @@
                             <div class="aside-section product-price bg-white border-grey">
                                 <h3 class="aside-title">Product Price</h3>
                                 <!-- /.aside-title -->
-                                <div class="current-price-wrap d-flex align-items-center">
+                                <div class="current-price-wrap d-xl-flex  align-items-center">
                                     <span class="current-price">$59.00</span>
                                     <div class="ml-auto">
                                         <select name="" id="" class="select-stayler">
@@ -560,7 +561,7 @@
     <footer id="footer" class="bg-dark-blue">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-lg-6 col-xl-3">
                     <h3 class="footer-title">About Company</h3>
                     <!-- /.footer-title -->
                     <p class="footer-text">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus. </p>
@@ -573,7 +574,7 @@
                     <!-- /.footer-info-item -->
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
+                <div class="col-12 col-lg-6 col-xl-3">
                     <h3 class="footer-title">Join Our Community</h3>
                     <!-- /.footer-title -->
                     <ul class="default-chevron-list">
@@ -586,7 +587,7 @@
                     <!-- /.default-chevron-list -->
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
+                <div class="col-12 col-lg-6 col-xl-3">
                     <h3 class="footer-title">Need Help?</h3>
                     <!-- /.footer-title -->
                     <ul class="default-chevron-list">
@@ -599,7 +600,7 @@
                     <!-- /.default-chevron-list -->
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
+                <div class="col-12 col-lg-6 col-xl-3">
                     <h3 class="footer-title">Follow Us On</h3>
                     <!-- /.footer-title -->
                     <ul class="footer-contact">
@@ -635,14 +636,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <!-- Slicknav -->
+    <script src="js/lib/jquery.slicknav.min.js"></script>
+    <!-- Slicknav -->
+    <script src="js/lib/jquery.slicknav.min.js"></script>
     <!-- ion range slider -->
-    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/lib/ion.rangeSlider.min.js"></script>
     <!-- jQuery form stayler -->
-    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/lib/jquery.formstyler.min.js"></script>
     <!-- Aside js -->
-    <script src="js/aside.js"></script>
+    <script src="js/main/aside.js"></script>
     <!-- Init plugins -->
-    <script src="js/init.js"></script>
+    <script src="js/main/init.js"></script>
 </body>
 </html>
