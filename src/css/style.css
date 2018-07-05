@@ -863,11 +863,27 @@ a.notify-button:hover {
     background-color: #8bc34a;
     box-shadow: none;
 	width: 16px;
-	height: 16px;
+    height: 16px;
+    outline: none;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
+    .week-trending {
+        position: relative;
+    }
     .slick-dots {
-        display: flex;
+        margin-top: -7px;
+        margin-bottom: auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+    .slick-dots li {
+        display: block;
+        padding: 5px 0;
+    }
+    .slick-dots li + li {
+        margin-left: auto;
     }
 }
 /* Week trending end */
