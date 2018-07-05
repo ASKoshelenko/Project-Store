@@ -866,12 +866,18 @@ a.notify-button:hover {
     height: 16px;
     outline: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 576px) {
+    .week-trending-wrapper .card-description {
+        padding: 22px 15px;
+    }
+    .week-trending-wrapper .card-author-info {
+        padding: 15px 15px;
+    }
     .week-trending {
         position: relative;
     }
     .slick-dots {
-        margin-top: -7px;
+        margin-top: -9px;
         margin-bottom: auto;
         position: absolute;
         top: 50%;
@@ -880,7 +886,7 @@ a.notify-button:hover {
     }
     .slick-dots li {
         display: block;
-        padding: 5px 0;
+        padding: 4px 0;
     }
     .slick-dots li + li {
         margin-left: auto;
@@ -919,8 +925,8 @@ a.notify-button:hover {
 /* why chose us end */
 /* Became author */
 .became-author {
-    margin-left: 18px;
-    margin-right: 18px;
+    margin-left: 33px;
+    margin-right: 33px;
     padding: 115px 0;
     background: url("../img/became-author-bg.jpg") no-repeat center / cover;
 }
@@ -946,6 +952,12 @@ a.notify-button:hover {
         margin-top: 10px;
     }
 }
+@media (max-width: 576px) {
+    .became-author {
+        margin-left: auto;
+        margin-right: auto;        
+    }
+}
 /* Became author end */
 /* Free tutorial */
 .tutorial-title {
@@ -963,6 +975,11 @@ a.notify-button:hover {
     }
     .free-tutorial .title {
         margin-bottom: 19px;
+    }
+}
+@media (max-width: 576px) {
+    .tutorial-title {
+        font-size: 1.4rem;
     }
 }
 /* Free tutorial end */

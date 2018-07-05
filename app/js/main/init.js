@@ -12,8 +12,8 @@
       $('.week-trending-carousel').slick({
             arrows: false,
             dots: true,
-            autoplay: true,
-            autoplaySpeed: 5000,
+            // autoplay: true,
+            // autoplaySpeed: 5000,
             slidesToShow: 4,
             slidesToScroll: 4,
             responsive: [
