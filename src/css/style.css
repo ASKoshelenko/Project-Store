@@ -80,14 +80,26 @@
 @media (max-width: 991px) {
     .mobile-aside-toggle {
         display: block;
+        position: fixed;
+        top: 50%;
+        z-index: 999;
+        color: #95c85a;
+        background-color: transparent;
     }
-
+    .mobile-aside-toggle.left {
+        left: 0;
+    }
+    .mobile-aside-toggle.right {
+        right: 0;
+    }
     .close-mobile-aside {
         display: block;
         position: absolute;
-        top: 10px;
+        top: 20px;
         right: 10px;
         color: #fff;
+        background-color: #e74c3c;
+        border-radius: 50%;
     }
 
     .mobile-aside {
@@ -1253,6 +1265,11 @@ a.product-btn:hover {
 .product-social li a i {
     width: 18px;
     text-align: center;
+}
+@media (max-width: 991px) {
+    .product-description h5 {
+        font-size: 1.375rem;
+    }
 }
 @media (max-width: 576px) {
     .product-btn {
